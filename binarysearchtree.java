@@ -25,19 +25,21 @@ class Tree{
                 if(don.data<temp.data){
                     if(temp.left!=null){
                         temp=temp.left;
-                        break;
+                        
                     }
                     else{
                     temp.left=don;
+                    break;
                     }
                 }
                 else{
                    if(temp.right!=null){
                         temp=temp.right;
-                        break;
+                        
                     }
                     else{
                     temp.right=don;
+                    break;
                     }
                 }
             }
@@ -81,6 +83,11 @@ class Main {
         t.insert(114);
         t.insert(115);
         t.insert(116);
+        
         t.pre(t.root);
+        System.out.println();
+        t.post(t.root);
+        System.out.println();
+        t.in(t.root);
     }
 }
