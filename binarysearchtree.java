@@ -23,16 +23,22 @@ class Tree{
             Node temp=root;
             while(true){
                 if(don.data<temp.data){
-                    while(temp.left!=null){
+                    if(temp.left!=null){
                         temp=temp.left;
+                        break;
                     }
+                    else{
                     temp.left=don;
+                    }
                 }
                 else{
-                   while(temp.right!=null){
+                   if(temp.right!=null){
                         temp=temp.right;
+                        break;
                     }
+                    else{
                     temp.right=don;
+                    }
                 }
             }
         }
