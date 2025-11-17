@@ -1,6 +1,7 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 import java.util.*;
+//armstrong number code
 class Main {
     public static void main(String[] args) {
         int  n=153;
